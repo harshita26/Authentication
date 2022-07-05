@@ -33,7 +33,7 @@ app.get("/login",function(req,res){
 });
 
 app.post("/register",function(req,res){
-
+    
     const user1= new User({email:req.body.username,password:req.body.password});
     user1.save(function(err){
         if(!err){
